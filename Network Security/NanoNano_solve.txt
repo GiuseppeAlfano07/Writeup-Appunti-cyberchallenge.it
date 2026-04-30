@@ -1,0 +1,4 @@
+Il traffico di rete contiene pochi pacchetti inviati e un solo flusso tcp, non ci resta dunque che analizzarlo
+notiamo che ci troviamo davanti a dei comandi eseguiti su una shell
+il file flag.txt e' il testo di una canzone, in seguito pero' tramite un operazione di steganografia viene camuffata la flag all'interno di questo testo tramite il comando nano.
+Capendo il funzionamento di nano vediamo che ci riconduce a vari caratteri in varie righe, andando a vedere tutte le operazioni troviamo la flag, composta da parti del testo della canzone originale
