@@ -1,0 +1,6 @@
+Analizzando il traffico di rete fornitoci, notiamo un pacchetto http, seguendo il flusso vediamo un esempio di risoluzione della challenge, con varie richieste che mandavano "a=?"
+Controllando tutte queste richieste notiamo che "a" poteva assumere i valori: "TURNL","TURNR","DIVE","BREAK".
+Restava capire come mandare a e a cosa seriva.
+Collegandoci al link fornito dalla challenge vediamo una griglia con un aereoplano e una pista disegnata, seguito da un indicatore dell'altitudine e da una casella vuota dove potevamo inviare qualcosa.
+Quella casella di testo e' dove inserire il contenuto di "a", dunque facendo vari tentativi noto che in base al comando inviato l'aereoplano cambia posizione nella griglia e l'altitudine scende sempre di 100.
+La challenge si risolve facendo in modo che in seguito a dei comandi l'aereoplano raggiunga la pista di atterraggio ancora con altitudine 100 e come ultimo comando eseguiamo "BRAKE", si aprira' cosi' una pagina che fara' vedere l'immagine e la flag.
