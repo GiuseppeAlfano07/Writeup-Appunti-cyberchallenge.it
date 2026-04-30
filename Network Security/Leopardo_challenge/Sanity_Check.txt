@@ -1,0 +1,1 @@
+La prima di una serie di 6 challenge con lo stesso traffico di rete, e' la piu' semplice, si risolve semplicemente aprendo i commenti del traffico di rete (prima operazione da fare in challenge di questo tipo) e troviamo li la flag.
