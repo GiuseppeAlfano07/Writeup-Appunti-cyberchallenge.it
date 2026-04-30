@@ -1,0 +1,4 @@
+La seconda challenge della serie, continuiamo sempre analizzando le richieste http e seguendo tutti i flussi, 
+noto come al flusso 2 viene fatta una richiesta get per ottenere un file api.js che essendo in http e' possibile vedere in chiaro, 
+notiamo come in questo file sono presenti delle credenziali, api_user e api_password, vedendo il formato della password vedo che i caratteri sono a coppie separati da un $, ipotizzo dunque che si possa trattare di un formato hex camuffato,
+dunque inserisco la password trovata su cyberchef eliminando i $ e cosi' troviamo la flag.
