@@ -1,0 +1,3 @@
+Sono una serie di challenge che riguardano i permessi in un sistema linux.
+E' necessario scaricare una iso per installare un vm.
+In questa vm saranno poi presenti tutti i vari livelli a cui si potra' accedere via via con credenziali fornite dalle challenge stesse
