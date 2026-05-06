@@ -1,0 +1,20 @@
+Descrizione:
+Another flag shop... can you buy the flag?
+
+Website: http://buyflag.challs.cyberchallenge.it
+
+Solve:
+Entrando sul sito vediamo che e' possibile acquistare la flag per 20 dollari ma sul nostro conto ne troviamo solo 10.
+troviamo una pagina chiamata transfer ma notiamo che il tasto per fare il trasferimento di denaro e' disabilitato e con un sottotitolo che dice che solo gli admin sono in grado di poter fare i trasferimenti.
+Facendo ispeziona sul codice della pagina transfer notiamo che il tasto transfer ha l'attributo disabled, elimando questo attributo sara' possibile cliccare il pulsante, 
+una volta eseguita questa operazione si apre un altra pagina dove ci viene detto nuovamente che solo gli admin possono trasferire denaro, pero' osservando l'url notiamo la sua struttura che sara' di tipo:
+
+http://buyflag.challs.cyberchallenge.it/doTransfer.php?to=&amount=
+
+Tornando alla home che e' presente anche una pagina "send a bug" dove possiamo inserire un url che verra' visitato dall'admin per vedere dove e' localizzato il bug che noi segnaliamo.
+Sfruttiamo dunque cio' per far fare all'admin l'operazione di trasfermento bancario.
+
+inviamo alla pagina send a bug  l'url precedente dove mandiamo soldi al nostro account (il numero del nostro account sara' il placeholder della pagina transfer). 
+Una volta inviato l'url andiamo sul conto e vediamo che ci sono stati accreditati i soldi che ci servivano e dopo di cio' possiamo acquistare la flag.
+
+
