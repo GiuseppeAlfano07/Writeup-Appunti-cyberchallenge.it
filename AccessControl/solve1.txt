@@ -1,0 +1,14 @@
+Descrizione challenge:
+_Find_ an executable file owned by flag00 with Set User ID. Read the flag.txt file in flag00's home. Log in as level00 with password level00
+
+Solve:
+Gia' dalla descrizione capiamo che dovremo usare il comando find, che dovra' trovare un eseguibile che sara' ingrado di cambiare lo uid e ci fara' ottenere i permessi per aprire il file.
+Inizialmente provo ad accedere ai file in modo classico ma ovviamente non ho i permessi per farlo dunque cerco i file prcedentemente citati con il comanndo:
+
+find / -type f -user flag00 -perm -4000 2>/dev/null
+
+trovo quindi che l'eseguibile si trova al percorso:
+
+/usr/share/nano/fishy
+
+dunque lo eseguo e mi trovo in una shell con i permessi di flag00 e posso dunque andare nella home a cercare il file fare un semplice cat
